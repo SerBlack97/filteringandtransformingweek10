@@ -8,16 +8,31 @@
   </head>
 
   <body>
+    <!-- pokemons -->
     <select id="types">
+      <option value="all">All Types</option>
       <option value="fire">Fire</option>
       <option value="water">Water</option>
       <option value="electric">Electric</option>
       <option value="grass">Grass</option>
     </select>
+
+    <!-- stats -->
     <select id="stats">
+      <option value="all">All</option>
       <option value="health">Health</option>
       <option value="attack">Attack</option>
     </select>
+
+    <div class="contatainer">
+      <!-- total health -->
+      <p>Total HP: <span id="totalHp"></span></p>
+      <!-- attack average -->
+      <p>Attack Average: <span id="averageAttack"></span></p>
+    </div>
+
+    <div id="pokemonDisplay"></div>
+
     <script src="js/apps.js"></script>
   </body>
 </html>
